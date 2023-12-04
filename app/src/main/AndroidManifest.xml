@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lab1App"
+        tools:targetApi="31">
+        <activity
+            android:name=".OldFeatures"
+            android:exported="false" />
+        <activity
+            android:name=".Addon9"
+            android:exported="false" />
+        <activity
+            android:name=".Addon8"
+            android:exported="false" />
+        <activity
+            android:name=".Addon7"
+            android:exported="false" />
+        <activity
+            android:name=".Addon6"
+            android:exported="false" />
+        <activity
+            android:name=".Addon5"
+            android:exported="false" />
+        <activity
+            android:name=".Addon4"
+            android:exported="false" />
+        <activity
+            android:name=".Addon3"
+            android:exported="false" />
+        <activity
+            android:name=".Addon2"
+            android:exported="false" />
+        <activity
+            android:name=".addon1"
+            android:exported="false" />
+        <activity
+            android:name=".Addon"
+            android:exported="false" />
+        <activity
+            android:name=".Screen7"
+            android:exported="false" />
+        <activity
+            android:name=".Screen6"
+            android:exported="false" />
+        <activity
+            android:name=".Screen5"
+            android:exported="false" />
+        <activity
+            android:name=".Screen4"
+            android:exported="false" />
+        <activity
+            android:name=".Screen333"
+            android:exported="false" />
+        <activity
+            android:name=".Screen33"
+            android:exported="false" />
+        <activity
+            android:name=".Screen2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
