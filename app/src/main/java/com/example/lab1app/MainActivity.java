@@ -12,12 +12,13 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btu_old;
     private Button btu_new;
-
+    private Button btu_fin1;
+    private Button btu_fin2;
+ 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
 
         btu_new = findViewById(R.id.btu_new);
@@ -34,6 +35,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, OldFeatures.class);
+                startActivity(i);
+            }
+        });
+
+        btu_fin1 = findViewById(R.id.btu_fin1);
+        btu_fin1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, solarAnim.class);
+                startActivity(i);
+            }
+        });
+
+        btu_fin2 = findViewById(R.id.btu_fin2);
+        btu_fin2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, clock.class);
                 startActivity(i);
             }
         });
