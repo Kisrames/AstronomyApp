@@ -20,6 +20,12 @@
         android:theme="@style/Theme.Lab1App"
         tools:targetApi="31">
         <activity
+            android:name=".clock"
+            android:exported="false" />
+        <activity
+            android:name=".solarAnim"
+            android:exported="false" />
+        <activity
             android:name=".OldFeatures"
             android:exported="false" />
         <activity
